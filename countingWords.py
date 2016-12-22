@@ -25,7 +25,7 @@ def count_words(text):
             word_counts[word] = 1
     return word_counts
 
-# same function as above but uses collections.Counter object
+# function as above but uses collections.Counter object
 def count_words_fast(text):
     """
     Count the number of times each word occurs in the

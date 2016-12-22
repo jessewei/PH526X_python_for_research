@@ -25,7 +25,7 @@ def count_words(text):
     return word_counts
 
 
-def word_stat(word_counts):
+def word_stats(word_counts):
     """
     Return number of unique words and word frequencies.
     """

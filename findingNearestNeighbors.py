@@ -1,8 +1,15 @@
 # HarvardX PH526x Week 3 Case Study 3: Introduction to Classification
-# Video 3.3.4: Finding K Nearest Neighbors
+# Video 3.3.4: Finding Nearest Neighbors
 
 import scipy.stats as ss
 import matplotlib.pyplot as plt
+import numpy as np
+
+def distance(p1, p2):
+    """
+    Find the distance between points p1 and p2.
+    """
+    return np.sqrt(np.sum(np.power(p2 - p1, 2)))
 
 def majority_vote(votes):
     """
@@ -41,9 +48,9 @@ outcomes = np.array([0,0,0,0,1,1,1,1,1])
 p = np.array([2.5, 2])
 
 # should return 1
-knn_predict(np.array([2.5, 2.7]), points, k=2)
+print(knn_predict(np.array([2.5, 2.7]), points, outcomes, k=2))
 # should return 0
-knn_predict(np.array([1.0, 2.7]), points, k=2)
+print(knn_predict(np.array([1.0, 2.7]), points, outcomes, k=2))
 
 ## Code for plotting
 #plt.plot(points[:, 0], points[:, 1], "ro")

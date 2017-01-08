@@ -1,5 +1,5 @@
 # HarvardX PH526x Week 3 Case Study 3: Introduction to Classification
-# Video 3.3.4: Finding Nearest Neighbors
+# Video 3.3.4: Finding K Nearest Neighbors
 
 import scipy.stats as ss
 import matplotlib.pyplot as plt

@@ -86,7 +86,7 @@ def plot_prediction_grid (xx, yy, prediction_grid, filename):
 
 if __name__ == "__main__":
     iris = datasets.load_iris()
-
+    #print(iris) # you get information like sepal length, sepal width, petal length, petal width
     # take all rows but only columns 0 and 1
     predictors = iris.data[:, 0:2]
     # take the dataset's classfication label
